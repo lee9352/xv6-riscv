@@ -1,0 +1,36 @@
+set confirm off
+set architecture riscv:rv64
+target remote 127.0.0.1:26000
+symbol-file kernel/kernel
+set disassemble-next-line auto
+set riscv use-compressed-breakpoints yes
+
+# entry
+# break *0x80000000 
+
+# start
+break *0x8000008e 
+
+# mtvec
+# break *0x80005b10
+
+# main
+break *0x80000e8e 
+
+# break uartinit
+# break kvminit
+# break proc_mapstacks
+# break procinit
+
+# break scheduler
+# break uvminit
+
+# init_code
+# break *0 
+
+# trampoline
+# break *0x3ffffff000 
+
+
+# add-symbol-file user/_init
+# break userinit

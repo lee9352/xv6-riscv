@@ -1,3 +1,4 @@
+#ifdef OS_COURSE
 // Saved registers for kernel context switches.
 struct context {
   uint64 ra;
@@ -106,3 +107,5 @@ struct proc {
   struct inode *cwd;           // Current directory
   char name[16];               // Process name (debugging)
 };
+
+#endif

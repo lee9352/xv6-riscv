@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "types.h": "c",
+        "memlayout.h": "c",
+        "string_view": "c",
+        "stdarg.h": "c",
+        "stdio.h": "c",
+        "atomic": "c",
+        "*.tcc": "c",
+        "fstream": "c",
+        "sstream": "c",
+        "thread": "c",
+        "limits": "c",
+        "iosfwd": "c",
+        "istream": "c",
+        "streambuf": "c"
+    }
+}
